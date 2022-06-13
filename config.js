@@ -12,22 +12,22 @@ global.APIKeys = {
 }
 
 // Ganti Sewajarnya
-global.owner = ['6285770017326']
-global.pengguna = 'Yusuf'
-global.premium = ['Yusuf']
-global.pemilik = ['6285770017326'] 
-global.ownernomer = '6285770017326'
-global.ownername = 'Yusuf'
-global.botname = ' TheGreatBot - ＭＤ'
+global.owner = ['6282173242194']
+global.pengguna = 'XRYMODSYT'
+global.premium = ['RISKY']
+global.pemilik = ['6282173242194'] 
+global.ownernomer = '6282173242194'
+global.ownername = 'XRYMODSYT'
+global.botname = ' The RISKY - ＭＤ'
 global.Prefix = 'Multi'
-global.meki = '6285770017326'
-global.footer = 'Yusuf | © 2022'
+global.meki = '6282173242194'
+global.footer = 'RISKY | © 2022'
 global.ig = 'https://instagram.com/'
-global.email = 'bostonb859@gmail.com'
+global.email = 'riskydarlis321@gmail.com'
 global.region = 'China'
-global.sc = 'https://m.youtube.com/channel/UCHIModder'
-global.packname = '✨ Yusuuf ✨' 
-global.author = 'TheGreatBot - ＭＤ' 
+global.sc = 'https://youtube.com/channel/UC_dYeKNRug2fKuS9NX58h3w'
+global.packname = '✨ RISKY ✨' 
+global.author = 'The RISKY - ＭＤ' 
 global.sessionName = 'yusuf'
 global.prefa = ['#','!','/','']
 global.sp = '» ' 
