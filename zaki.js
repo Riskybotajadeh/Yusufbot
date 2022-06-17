@@ -247,8 +247,10 @@ module.exports = zaki = async (zaki, m, chatUpdate, store) => {
         const isGBanned = banned.includes(m.chat)
 
 zaki.delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
-const pict = fs.readFileSync('./pict.jpg')
-    const ctlg = { "key": { "fromMe": false, "participant": "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.net"},"message": { "orderMessage": { "itemCount": 0, "surface": 'CATALOG' }}}
+const pict = fs.readFileSync('./pict.jpg')
+
+    const ctlg = { "key": { "fromMe": false, "participant": "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.net"},"message": { "orderMessage": { "itemCount": 0, "surface": 'CATALOG' }}}
+
     const reply = (jid = m.chat, text, quoted = ctlg) => zaki.sendMessage(jid, { text: text, contextInfo: { forwardingScore: 999, isForwarded: true,externalAdReply: {title: 'By YusufKun', previewType:"PHOTO", thumbnail:pict, sourceUrl: `https:://uchimods-web.blogspot.com/` }}}, { quoted })
 
 const load = (text) => zaki.sendMessage(m.chat, { text: text, contextInfo: { forwardingScore: 999, isForwarded: true,externalAdReply: {title: 'Tunggu Sebenter Kak...', body: 'Orang Yang Sabar Di Sayang Aku', previewType:"PHOTO", thumbnail:pict, sourceUrl: 'https://youtube.com/c/UCHIMODDER' }}}, {quoted: m})
@@ -377,11 +379,7 @@ const ban = (text, text2, text3) => zaki.sendMessage(m.chat, { text: text, conte
             if (!m.key.fromMe) return
         }
 
-        // Push Message To Console && Auto Read
-        if (m.message) {
-            zaki.sendReadReceipt(m.chat, m.sender, [m.key.id])
-            console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> Dari'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
-        }
+
 //Time
         moment.tz.setDefault("Asia/Jakarta").locale("id");
 
